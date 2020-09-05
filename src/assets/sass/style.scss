@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    src: url('../fonts/Ubuntu/Bold.ttf');
+}
+
+$duration: 0.6s;
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    font-family: 'Ubuntu';
+    text-align: center;
+
+    .react {
+        user-select: none;
+
+        h1 {
+            font-size: 40px;
+            color: #61dafb;
+            transition: $duration;
+            margin: 0;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        h1:hover + p {
+            opacity: 1;
+        }
+
+        p {
+            font-size: 17px;
+            transition: $duration;
+            color: rgb(231, 231, 231);
+            opacity: 0;
+            margin: 5px 0;
+        }
+       
+    }
+}

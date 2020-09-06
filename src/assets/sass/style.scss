@@ -20,7 +20,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 
     .content {
-        padding: 0 8%;
+        padding: 0 10%;
+    }
+
+    a {
+        color: #222;
+        text-decoration: none;
     }
 
     h1, h2, h3, h4, h5, h6 {

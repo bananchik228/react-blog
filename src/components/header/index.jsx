@@ -1,13 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './header.scss'
 
 export default () => {
     return <div className="header">
         <div className="header__content">
-            <h2>Это обычная шапка блога!</h2>
+            <Link to ="/posts">
+                <h2>Это обычная шапка блога!</h2>
+            </Link>
+
             <p>Это небольшое описание моего блога.</p>
-            <button className="header__button">Обо мне</button>
+            
+            <Link to="/about">
+                <button className="header__button">Обо мне</button>
+            </Link>
         </div>
     </div>
 }

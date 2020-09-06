@@ -1,0 +1,23 @@
+.about {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 30px;
+        margin: 12px 0 10px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+        margin-bottom: 12px;
+
+        &_size_small {
+            font-size: 15px;
+        }
+    }
+
+    img {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+}

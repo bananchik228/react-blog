@@ -1,0 +1,47 @@
+.button {
+    margin-top: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 8px 11px;
+    color: white;
+    background: rgb(204, 203, 201);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &_type_info {
+        background: rgb(31, 124, 230);
+
+        &:active {
+            background: rgb(29, 116, 216);
+        }
+    }
+
+    &_type_success {
+        background: rgb(31, 161, 42);
+
+        &:active {
+            background: rgb(29, 148, 39);
+        }
+    }
+
+    &_type_warning {
+        color: #222;
+        background: rgb(228, 195, 12);
+
+        &:active {
+            background: rgb(216, 185, 11);
+        }
+    }
+
+    &_type_danger {
+        background: rgb(185, 38, 38);
+
+        &:active {
+            background: rgb(170, 35, 35);
+        }
+    }
+}

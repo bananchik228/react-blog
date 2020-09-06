@@ -1,18 +1,34 @@
 .header {
-    height: 200px;
-    background: rgb(216, 213, 186);
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #222;
+    color: rgb(250, 250, 250);
+    position: relative;
 
-    &__button {
-        background: rgb(194, 190, 132);
+    h2 {
+        color: rgb(250, 250, 250);
+    }
 
-        &:active {
-            background: rgb(182, 178, 124);
-        }
+    &__description {
+        margin-bottom: 10px;
+    }
+
+    &__background {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+        position: absolute;
+    }
+
+    &__overlay {
+        @extend .header__background;
+        background: #111;
+        opacity: 0.3;
+        z-index: -1;
     }
 }

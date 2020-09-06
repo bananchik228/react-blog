@@ -1,16 +1,19 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
+import Posts from '@components/posts'
+import About from '@components/about'
+
 export default () => {
     return (
         <div className="content">
             <Switch>
                 <Route exact path="/posts">
-                    Здесь будут посты блога
+                    <Posts />
                 </Route>
 
                 <Route exact path="/about">
-                    Здесь всё обо мне и о моём блоге
+                    <About />
                 </Route>
 
                 <Redirect to="/posts" />

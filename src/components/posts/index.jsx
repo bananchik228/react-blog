@@ -1,9 +1,15 @@
 import React from 'react'
 
-export default () => {
+import PostItem from './__item'
+
+import './posts.scss'
+
+export default ({posts}) => {
     return (
         <div className="posts">
-            <p>Здесь будут посты блога</p>
+            {posts.map(post => (
+                <PostItem post={post} key={post.title} />
+            ))}
         </div>
     )
 }

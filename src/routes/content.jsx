@@ -1,15 +1,15 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
-import Posts from '@components/posts'
+import Posts from './posts'
 import About from '@components/about'
 
-export default () => {
+export default ({posts, addPost}) => {
     return (
         <div className="content">
             <Switch>
-                <Route exact path="/posts">
-                    <Posts />
+                <Route path="/posts">
+                    <Posts posts={posts} addPost={addPost} />
                 </Route>
 
                 <Route exact path="/about">

@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Posts from '@components/posts'
+import PostAdd from '@components/post-add'
 
 export default ({posts, addPost}) => {
      return (
@@ -11,7 +12,7 @@ export default ({posts, addPost}) => {
             </Route>
 
             <Route exact path="/posts/add">
-                Добавление нового поста
+                <PostAdd />
             </Route>
 
             <Route exact path="/posts/:number">

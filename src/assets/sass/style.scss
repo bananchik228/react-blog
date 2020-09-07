@@ -18,16 +18,21 @@
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    background: rgb(243, 243, 243);
+    background: rgb(248, 248, 248);
     color: #222;
 
-    input {
+    input, textarea, select {
+        font-family: 'Ubuntu', sans-serif;
         padding: 7px 9px;
-        width: 40%;
+        width: 100%;
         outline: none;
         font-size: 15px;
         border: 1px solid silver;
         border-radius: 4px;
+    }
+
+    select {
+        width: auto;
     }
 
     .content {

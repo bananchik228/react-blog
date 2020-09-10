@@ -1,14 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
-import './posts__item.scss'
+export default ({posts}) => {
+    const { id } = useParams()
+    const post = posts.find(post => post.id === +id)
 
-export default ({post}) => {
     return (
         <div className="posts__item">
-            <Link to={`/posts/${post.id}`}>
-                <h2 className="posts__title">{post.title}</h2>
-            </Link>
+            <h2 className="posts__title">{post.title}</h2>
             <i>Категория: {post.category}</i>
             <p>{post.description}</p>
             <i>{post.date.toLocaleString()}</i>

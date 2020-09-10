@@ -20,7 +20,7 @@ export default ({posts, addPost}) => {
                 <Post posts={posts} />
             </Route>
 
-            <Route exact path="/posts/:number/edit">
+            <Route exact path="/posts/:id/edit">
                 Редактирование поста
             </Route>
 

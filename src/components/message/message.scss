@@ -1,0 +1,35 @@
+.message {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+    background: rgb(207, 207, 207);
+    border: 1px solid rgb(189, 189, 189);
+
+    b {
+        font-weight: 500;
+    }
+
+    &_type_info {
+        background:#d9edf7;
+        border-color: #bce8f1;
+        color: #31708f;
+    }
+
+    &_type_success {
+        background: #dff0d8;
+        border-color: #d6e9c6;
+        color: #3c763d;
+    }
+
+    &_type_warning {
+        background: #fff3cd;
+        border-color: #ffeeba;
+        color: #947006;
+    }
+
+    &_type_danger {
+        background: #f2dede;
+        border-color: #ebccd1;
+        color: #a94442;
+    }
+}

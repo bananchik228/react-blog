@@ -12,7 +12,7 @@ export default ({posts, addPost}) => {
             </Route>
 
             <Route exact path="/posts/add">
-                <PostAdd />
+                <PostAdd addPost={addPost} />
             </Route>
 
             <Route exact path="/posts/:number">
